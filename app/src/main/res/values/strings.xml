@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Preferences</string>
+
+    <string name="user">Nina</string>
+    <string name="pwd">helloworld</string>
+
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atilano.preferences.MainActivity">
+
+    <TextView
+        android:id="@+id/tvUname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/tvPword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvUname"
+        android:layout_alignLeft="@id/tvUname"/>
+
+    <EditText
+    android:id="@+id/etUname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Username"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@id/tvUname"
+    android:layout_alignBaseline="@id/tvUname"
+    android:ems="10"/>
+
+    <EditText
+        android:id="@+id/etPword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvPword"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvPword"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tvPword"
+        android:layout_alignLeft="@id/tvPword"
+        android:onClick="saveInfo"
+        />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tvPword"
+        android:layout_alignRight="@id/etPword"
+        android:onClick="loadInfo"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSave"
+        android:layout_marginTop="70dp"/>
+
+</RelativeLayout>
